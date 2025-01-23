@@ -13,6 +13,12 @@ vnet = {
     location            = "east us"
     resource_group_name = "my-test-rg"
   }
+    vnet2 = {
+    name                = "my-test-vnet2"
+    address_space       = ["10.0.2.0/16"]
+    location            = "east us"
+    resource_group_name = "my-test-rg"
+  }
 
 }
 subnet = {
