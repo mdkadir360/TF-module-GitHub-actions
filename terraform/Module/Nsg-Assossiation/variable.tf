@@ -1,3 +1,1 @@
-variable "association" {
-
-}
+variable "association" {}

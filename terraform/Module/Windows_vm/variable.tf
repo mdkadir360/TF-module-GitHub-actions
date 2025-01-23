@@ -1,3 +1,1 @@
-variable "windows-vm" {
-  
-}
+variable "windows-vm" {}

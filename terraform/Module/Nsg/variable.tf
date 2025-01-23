@@ -1,7 +1,3 @@
-variable "nsg" {
+variable "nsg" {}
 
-}
-
-variable "security" {
-
-}
+variable "security" {}

@@ -1,13 +1,13 @@
 resource "azurerm_linux_virtual_machine" "vm" {
-  for_each              = var.vm
-  name                  = each.value.name
-  resource_group_name   = each.value.resource_group_name
-  location              = each.value.location
-  size                  = "Standard_F2"
-  admin_username        = "adminuser"
-  admin_password        = "adminuser@1234"
-  network_interface_ids = [data.azurerm_network_interface.nicdata[each.key].id]
- disable_password_authentication = false
+  for_each                        = var.vm
+  name                            = each.value.name
+  resource_group_name             = each.value.resource_group_name
+  location                        = each.value.location
+  size                            = "Standard_F2"
+  admin_username                  = "adminuser"
+  admin_password                  = "adminuser@1234"
+  network_interface_ids           = [data.azurerm_network_interface.nicdata[each.key].id]
+  disable_password_authentication = false
 
   os_disk {
     caching              = "ReadWrite"
