@@ -3,6 +3,10 @@ rg = {
     name     = "my-test-rg"
     location = "east us"
   }
+  rg2 = {
+    name     = "my-vnet-vnet"
+    location = "east us"
+  }
 
 }
 
@@ -15,9 +19,9 @@ vnet = {
   }
   vnet2 = {
     name                = "my-test-vnet2"
-    address_space       = ["10.0.2.0/16"]
+    address_space       = ["10.0.0.0/16"]
     location            = "east us"
-    resource_group_name = "my-test-rg"
+    resource_group_name = "my-vnet-vnet"
   }
 
 }
